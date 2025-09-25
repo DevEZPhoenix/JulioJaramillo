@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Julio Jaramillo — El Ruiseñor de América</title>
+  <link rel="icon" type="image/png" href="Fotos/jj_icon.png">
+  <style>
+    :root {
+      --accent: #8b2e2e;
+      --bg: #faf7f7;
+      --text: #222;
+      --card-bg: #fff;
+      --header-bg: linear-gradient(135deg, rgba(139,46,46,0.95), rgba(139,46,46,0.75));
+      --link-color: #8b2e2e;
+    }
+
+    [data-theme="dark"] {
+      --bg: #121212;
+      --text: #ffffff;
+      --card-bg: #1e1e1e;
+      --header-bg: linear-gradient(135deg, rgba(50,50,50,0.95), rgba(80,0,0,0.85));
+      --link-color: #ff9999;
+    }
+
+    *{box-sizing:border-box;}
+    body{
+      margin:0;
+      font-family:Inter, system-ui, -apple-system, Roboto, "Helvetica Neue", Arial;
+      color:var(--text);
+      background:var(--bg);
+    }
+    a{color:var(--link-color);text-decoration:none;}
+    a:hover{text-decoration:underline;}
+
+    nav{
+      position: fixed;
+      top:0;
+      left:0;
+      width:100%;
+      background: var(--card-bg);
+      display:flex;
+      justify-content: space-between;
+      align-items: center;
+      padding:10px 30px;
+      box-shadow:0 2px 10px rgba(0,0,0,0.15);
+      z-index: 1000;
+    }
+    nav a{margin:0 12px;font-weight:500;}
+    .nav-left{display:flex;align-items:center;flex-wrap:wrap;}
+    .nav-right{display:flex;align-items:center;}
+    .theme-toggle{
+      cursor:pointer;
+      padding:6px 12px;
+      border-radius:8px;
+      border:1px solid var(--accent);
+      background: var(--accent);
+      color:#fff;
+      font-weight:bold;
+    }
+
+    header {
+      background: var(--header-bg);
+      color:#fff;
+      padding: 50px 20px;
+      text-align:center;
+      position: relative;
+    }
+    header img{max-width:220px;border-radius:50%;border:4px solid #fff;box-shadow:0 6px 20px rgba(0,0,0,0.3);}
+    h1{margin:16px 0 6px;font-size:34px;}
+    p.lead{margin:0 auto;max-width:600px;color:#fff;opacity:0.95;}
+    .meta{font-size:14px;color:#ddd;margin-top:6px;}
+
+    main{padding-top:90px; max-width:1000px;margin:0 auto;padding-left:18px;padding-right:18px;}
+    section.card{background:var(--card-bg);border-radius:16px;padding:24px;margin-bottom:24px;box-shadow:0 8px 24px rgba(17,17,17,0.06);}
+    
+    h2{color:var(--accent);margin-top:0;font-size:24px;border-bottom:2px solid #eee;padding-bottom:6px;}
+    h3{margin-top:14px;color:var(--text);}
+    ul.clean{padding-left:20px;color:var(--text);}
+    .timeline{border-left:3px solid #eee;padding-left:14px;color:var(--text);}
+
+    .gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:20px;margin-top:16px;}
+    .gallery img{width:100%;height:220px;object-fit:cover;border-radius:12px;box-shadow:0 4px 14px rgba(0,0,0,0.15);}
+
+    .audio-list{display:grid;gap:24px;margin-top:12px;}
+    audio{width:100%;}
+
+    footer{padding:30px 0;color:var(--text);font-size:14px;text-align:center;}
+  </style>
+</head>
+<body data-theme="light">
+  <nav>
+    <div class="nav-left">
+      <a href="#biografia">Biografía</a>
+      <a href="#discografia">Discografía</a>
+      <a href="#galeria">Galería</a>
+      <a href="#audios">Canciones</a>
+      <a href="#mas-info">Más Información</a>
+      <a href="#linea-tiempo">Línea de Tiempo</a>
+      <a href="#legado">Legado</a>
+      <a href="videos.html">Videos</a>
+    </div>
+    <div class="nav-right">
+      <button class="theme-toggle" onclick="toggleTheme()">Modo Oscuro</button>
+    </div>
+  </nav>
+
+  <header>
+    <img src="Fotos/jj_perfil.jpg" alt="Julio Jaramillo retrato" />
+    <h1>Julio Jaramillo</h1>
+    <p class="lead">"El Ruiseñor de América" — uno de los cantantes más queridos de Ecuador y Latinoamérica, famoso por su voz sentimental y su repertorio de boleros, pasillos y valses.</p>
+    <p class="meta">Nació: 1 de octubre de 1935 — Falleció: 9 de febrero de 1978 | Origen: Guayaquil, Ecuador</p>
+  </header>
+  <main>
+    <!-- Biografía -->
+    <section id="biografia" class="card">
+     <h2>Biografía</h2>
+     <p>Julio Alfredo Jaramillo Laurido nació el 1 de octubre de 1935 en Guayaquil, siendo hijo de Juan Pantaleón Jaramillo Erazo y Apolonia Laurido Cáceres. Su padre falleció en un accidente cuando él era un niño, el cual ocurrió el 2 de abril de 1941. En 1942, junto a sus hermanos, fue inscrito a la escuela «Sociedad Filantrópica del Guayas», pero fue expulsado en el tercer grado por inasistencia y problemas de disciplina. Posteriormente, ingresó a una escuela fiscal en la que terminó su educación primaria, donde además fue educado por el profesor, escritor y poeta Lauro Dávila Echeverría.</p>
+
+     <p>En 1950, su madre lo inscribió al Colegio Mercantil para que estudiara contaduría. Al terminar el segundo año escolar en dicha institución, decidió abandonar sus estudios. Solicitó trabajo en un taller de zapatos para aprender el oficio de «plantador de calzado fino de mujer». Cuando se cansó de la antedicha profesión, se desempeñó como charolador de muebles y ebanista. El mismo año, empezó a ofrecer sus servicios como cantante en sitios y clubes nocturnos de la Lagartera, «Puerto Rico», «La Mamita» y el «Maracaibo». En este último conoció a Hugo Reyes, quien se convirtió en su mejor amigo.</p>
+
+     <p>Su talento pronto llamó la atención en la escena musical local, y antes de cumplir los veinte años ya había grabado sus primeras canciones. Julio desarrolló un estilo inconfundible que mezclaba la dulzura del bolero, la nostalgia del pasillo y la intensidad del tango. Su manera de interpretar reflejaba una sinceridad emocional que cautivó a públicos de todas las edades y clases sociales.</p>
+
+     <p>A lo largo de su carrera, grabó más de 4.000 canciones en diversos géneros, incluyendo bolero, pasillo, vals, tango, ranchera y cumbia. Su música trascendió fronteras y lo llevó a presentarse en países como Colombia, Perú, México, Venezuela y Estados Unidos, consolidándose como uno de los grandes exponentes de la música popular latinoamericana.</p>
+    </section>
+
+    <!-- Discografía -->
+    <section id="discografia" class="card">
+      <h2>Discografía Destacada</h2>
+      <p>La carrera discográfica de Julio Jaramillo es vasta, con miles de grabaciones que aún hoy se escuchan en radios y plataformas digitales. Entre sus discos y canciones más importantes se encuentran:</p>
+      <ul class="clean">
+        <li><strong>Nuestro Juramento (1956)</strong> — Hito en la música romántica latinoamericana.</li>
+        <li><strong>Fatalidad (1957)</strong> — Pasillo emblemático de su carrera.</li>
+        <li><strong>Mi Pecado (1958)</strong> — Refleja su estilo sentimental y apasionado.</li>
+        <li><strong>Ódiame (1960)</strong> — Bolero intenso, uno de sus grandes éxitos.</li>
+        <li><strong>El Aguacero (1961)</strong> — Canción que aún se recuerda en Ecuador y Perú.</li>
+        <li><strong>Cinco Centavitos</strong> — Uno de los pasillos más interpretados en su voz.</li>
+        <li><strong>Que nadie sepa mi sufrir</strong> — Conocida también como "La Foule".</li>
+      </ul>
+      <p>Su discografía completa es prácticamente imposible de enumerar en su totalidad, pero cada grabación de Julio Jaramillo forma parte del acervo musical de América Latina.</p>
+    </section>
+
+    <!-- Galería -->
+    <section id="galeria" class="card">
+      <h2>Galería de fotos</h2>
+      <div class="gallery">
+        <img src="Fotos/jj_cantando.jpg" alt="Julio Jaramillo cantando" title="Julio Jaramillo en el escenario" />
+        <img src="Fotos/jj_concierto.jpg" alt="Julio Jaramillo en concierto" title="Concierto en Guayaquil" />
+        <img src="Fotos/jj_disco.jpg" alt="Portada de disco" title="Portada de uno de sus discos más famosos" />
+        <img src="Fotos/jj_radio.jpg" alt="En emisora" title="Participación en emisora radial" />
+        <img src="Fotos/jj_retrato.jpg" alt="Retrato clásico" title="Retrato clásico de Julio Jaramillo" />
+        <img src="Fotos/jj_conpedrovargas.jpg" alt="Con Pedro Vargas" title="Junto al famoso Pedro Vargas" />
+      </div>
+    </section>
+
+    <!-- Audios -->
+    <section id="audios" class="card">
+      <h2>Top 3 Mejores Cancionesde J.J</h2>
+      <div class="audio-list">
+        <div>
+          <h3>1. Nuestro Juramento</h3>
+          <audio controls>
+            <source src="Audios/nuestro_juramento.mp3" type="audio/mpeg"/>
+          </audio>
+        </div>
+        <div>
+          <h3>2. Fatalidad</h3>
+          <audio controls>
+            <source src="Audios/fatalidad.mp3" type="audio/mpeg"/>
+          </audio>
+        </div>
+        <div>
+          <h3>3. Que Nadie Sepa mi Sufrir</h3>
+          <audio controls>
+            <source src="Audios/que_nadie_sepa_mi_sufrir.mp3" type="audio/mpeg"/>
+          </audio>
+        </div>
+      </div>
+    </section>
+
+    <!-- Más Información -->
+    <section id="mas-info" class="card">
+      <h2>Más Información</h2>
+      <p>Recursos confiables para profundizar en la vida y legado de Julio Jaramillo:</p>
+      <h3>Canales oficiales y multimedia</h3>
+      <ul class="clean">
+        <li><a href="https://www.youtube.com/channel/UCfA98MUV9YoBd5mRMosQ3OA" target="_blank">Canal de YouTube Oficial</a></li>
+        <li><a href="https://open.spotify.com/intl-es/artist/6HqPNOo6OV9rPbEY7MP9T8?si=OhqOe3NdRGKSNP0z0Kmxhg" target="_blank">Escuchar en Spotify</a></li>
+        <li><a href="https://www.deezer.com/us/artist/67781" target="_blank">Escuchar en Deezer</a></li>
+      </ul>
+      <h3>Referencias biográficas y artículos</h3>
+      <ul class="clean">
+        <li><a href="https://es.wikipedia.org/wiki/Julio_Jaramillo" target="_blank">Wikipedia</a></li>
+        <li><a href="https://www.ecuadortimes.net/es/julio-jaramillo-entrara-al-salon-de-la-fama-de-compositores-latinos-en-miami/" target="_blank">Ecuador Times</a></li>
+        <li><a href="https://www.eluniverso.com/entretenimiento/musica/45-anos-sin-julio-jaramillo-estas-son-las-10-canciones-mas-populares-del-ruisenor-de-america-nota/" target="_blank">El Universo</a></li>
+      </ul>
+      <h3>Libros y publicaciones</h3>
+      <ul class="clean">
+        <li>"Julio Jaramillo: El Ruiseñor de América" — Biografía autorizada con testimonios familiares.</li>
+        <li>"La música popular ecuatoriana" — Capítulos dedicados a su influencia en pasillo y bolero.</li>
+        <li>"Memorias de un cantor" — Recopilación de anécdotas, fotos y discos históricos.</li>
+      </ul>
+    </section>
+
+    <!-- Línea de tiempo -->
+    <section id="linea-tiempo" class="card">
+      <h2>Línea de tiempo</h2>
+      <div class="timeline">
+        <p><strong>1935:</strong> Nace en Guayaquil, Ecuador.</p>
+        <p><strong>1950:</strong> Comienza su carrera profesional en radios locales.</p>
+        <p><strong>1956:</strong> Graba "Nuestro Juramento".</p>
+        <p><strong>1960s:</strong> Viaja por América Latina, consolidando su fama.</p>
+        <p><strong>1978:</strong> Fallece a los 42 años.</p>
+      </div>
+    </section>
+
+    <!-- Legado -->
+    <section id="legado" class="card">
+      <h2>Legado y Reconocimiento</h2>
+      <p>Julio Jaramillo no solo fue un intérprete brillante, sino también un símbolo cultural. Su música es escuchada en hogares, radios y eventos sociales hasta la actualidad. A más de cuatro décadas de su muerte, sigue siendo una figura inmortal para Ecuador y toda América Latina.</p>
+      <p>Su apodo, <strong>"El Ruiseñor de América"</strong>, refleja la profundidad de su voz y la universalidad de sus interpretaciones. Cada 1 de octubre, en Ecuador, se conmemora el Día del Pasillo en su honor, demostrando la vigencia de su legado.</p>
+      <p>Monumentos, museos, programas radiales y homenajes musicales se han realizado en su nombre. Su figura inspira a nuevas generaciones de artistas que encuentran en él un modelo de entrega y pasión por la música.</p>
+    </section>
+
+    <footer>
+      <p>Página creada por Omar Leonardo Vera Peñafiel y sus compañeros de 3ro Informática B</p>
+    </footer>
+  </main>
+
+  <script>
+    // Solo permitir que se reproduzca un audio a la vez
+    const audios = document.querySelectorAll("audio");
+    audios.forEach(audio => {
+      audio.addEventListener("play", () => {
+        audios.forEach(other => { if(other !== audio){ other.pause(); } });
+      });
+    });
+
+    // Toggle Modo Oscuro/Claro
+    function toggleTheme(){
+      const body = document.body;
+      if(body.getAttribute("data-theme") === "light"){
+        body.setAttribute("data-theme","dark");
+      }else{
+        body.setAttribute("data-theme","light");
+      }
+    }
+  </script>
+</body>
+</html>
